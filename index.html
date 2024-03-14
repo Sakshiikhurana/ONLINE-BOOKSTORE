@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystical Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <h1>Mystical Bookstore</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <!-- <li><a href="#">Genres</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Mystery</a></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Fiction</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>
+                <bold>Welcome to the Mystical Bookstore</bold>
+            </h2>
+            <h3>Explore ancient tomes, magical scrolls, and mystical knowledge from realms and dimensions beyond.</h3>
+        </div>
+    </section>
+
+    <section class="featured-books">
+        <form class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by Genres">
+            <p onclick="fetchFeaturedBooks()" id="searchButton">Search</p>
+
+        </form>
+        <h2>Featured Books</h2>
+        <div class="books">
+            <!-- Featured books will be dynamically populated here -->
+        </div>
+        <div class="read-more">
+            <p><a href="books.html">👉Click Here To Visit Full Website👈</a></p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mystical Bookstore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.js"
+        integrity="sha512-BK9PHgiHWfibD1gZHjigMVxh6wMAFhiGa8FV3mYdGIHO7QJWlP/Uy2kTw3ykOLd9OtSJyPSqPNKIRiSmAFw6UA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
